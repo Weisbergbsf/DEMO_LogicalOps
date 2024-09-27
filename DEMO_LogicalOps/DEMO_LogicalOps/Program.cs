@@ -34,6 +34,21 @@
             //{
             //    Console.WriteLine("You are not eligible for the discount");
             //}
+
+            Console.Write("What is your salary?: ");
+            double salary = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("How many years have you been at your current job?: ");
+            double years = Convert.ToDouble(Console.ReadLine());
+
+            if (years >=5 || (salary >= 30000 && years >= 2))
+            {
+                Console.WriteLine("Congrats! You qualify for the loan.");
+            }
+            else
+            {
+                Console.WriteLine("Sorry, you do not qualify for the loan");
+            }
         }
     }
 }
